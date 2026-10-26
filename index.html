@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="FitBuddi — Health Under Control. Download the latest Android APK.">
+<meta name="theme-color" content="#0a0f0f">
+<title>FitBuddi — Download APK</title>
+<style>
+:root[data-theme="dark"]{--bg:#0a0f0f;--card:#121a1a;--text:#e9f5f2;--muted:#8fa6a2;--line:#1f2d2c;--accent:#5eead4;--on:#04201c}
+:root[data-theme="light"]{--bg:#f4fbf9;--card:#ffffff;--text:#0b1a18;--muted:#5b716d;--line:#d6ebe5;--accent:#2dd4bf;--on:#04201c}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.55;transition:background .25s,color .25s}
+.wrap{max-width:720px;margin:0 auto;padding:0 18px 40px}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+.brand{font-weight:700;letter-spacing:.3px}
+.verified{display:inline-flex;gap:6px;align-items:center;font-size:12px;color:var(--accent);border:1px solid var(--line);padding:4px 10px;border-radius:99px;margin-left:8px}
+.toggle{background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:99px;padding:7px 14px;cursor:pointer;font-size:13px}
+.hero{display:flex;gap:16px;align-items:center;margin:8px 0 18px}
+.hero img{width:96px;height:96px;border-radius:22px;border:1px solid var(--line);object-fit:cover}
+.hero h1{font-size:28px;line-height:1.15}
+.hero p{color:var(--muted);font-size:14px}
+.rating{color:var(--accent);font-size:14px;margin-top:4px}
+.safe{display:flex;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;margin-bottom:14px}
+.safe b{display:block}
+.safe span{color:var(--muted);font-size:13px}
+.ribbon{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--accent);color:var(--on);border-radius:12px;padding:10px 14px;margin-bottom:18px;font-size:14px;font-weight:600}
+.ribbon button{background:none;border:0;color:var(--on);font-size:20px;cursor:pointer;line-height:1}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:22px;text-align:center}
+.stats div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 4px}
+.stats b{display:block;font-size:17px}
+.stats span{font-size:11px;color:var(--muted)}
+h2{font-size:19px;margin:28px 0 12px}
+.shots{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}
+.shots img{height:360px;border-radius:16px;border:1px solid var(--line);scroll-snap-align:start;cursor:pointer;flex:0 0 auto}
+.btn{display:block;text-align:center;background:var(--accent);color:var(--on);font-weight:700;font-size:17px;text-decoration:none;padding:15px;border-radius:14px;margin-top:22px}
+.note{text-align:center;color:var(--muted);font-size:13px;margin-top:8px}
+.social{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:18px}
+.social a{display:inline-flex;align-items:center;gap:7px;color:var(--text);text-decoration:none;font-size:13px;background:var(--card);border:1px solid var(--line);padding:9px 13px;border-radius:99px}
+.social svg{width:18px;height:18px;color:var(--accent)}
+.video{width:400px;max-width:100%;height:350px;border:20px solid var(--accent);border-radius:16px;margin:0 auto;position:relative;overflow:hidden;background:linear-gradient(135deg,#0d1f1d,#16312e)}
+.video iframe{width:100%;height:100%;border:0}
+.play{position:absolute;inset:0;margin:auto;width:76px;height:76px;border-radius:50%;border:0;background:var(--accent);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.play:after{content:"";border-left:24px solid var(--on);border-top:14px solid transparent;border-bottom:14px solid transparent;margin-left:6px}
+.vmsg{position:absolute;bottom:14px;left:0;right:0;text-align:center;color:#cfe;font-size:12px}
+ul.points{list-style:none}
+ul.points li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:8px;font-size:14px}
+ul.points b{color:var(--accent)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chips span{font-size:13px;border:1px solid var(--line);background:var(--card);padding:6px 12px;border-radius:99px}
+.rows div{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:14px}
+.rows span{color:var(--muted)}
+ol.steps{list-style:none;counter-reset:s}
+ol.steps li{counter-increment:s;display:flex;gap:12px;align-items:center;margin-bottom:12px;font-size:14px}
+ol.steps li:before{content:counter(s);flex:0 0 30px;height:30px;border-radius:50%;background:var(--accent);color:var(--on);font-weight:700;display:flex;align-items:center;justify-content:center}
+.text p{color:var(--muted);font-size:14px;margin-bottom:10px}
+.text a{color:var(--accent)}
+footer{text-align:center;color:var(--muted);font-size:12px;margin-top:34px;border-top:1px solid var(--line);padding-top:18px}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:50;align-items:center;justify-content:center;flex-direction:column;gap:12px}
+.modal.open{display:flex}
+.modal img{max-width:92vw;max-height:78vh;border-radius:14px}
+.modal button{background:var(--accent);color:var(--on);border:0;border-radius:99px;padding:8px 18px;font-weight:700;cursor:pointer;margin:0 4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div><span class="brand">FitBuddi</span><span class="verified">✓ Verified publisher</span></div>
+  <button class="toggle" id="themeBtn">☀ Light</button>
+</header>
+
+<section class="hero">
+  <!-- ICON: replace the link below with your icon link (recommended 512 x 512 px PNG) -->
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghGyl9A7R8DqgUblecjHWt78ro8ANIyoyMtYMAmbGv8C30kKHM_9ZojyBLfNHtF7gd0JqLqt1C8aqruIn1VpR-DNWRqN-lI8Nyv1tKsCgDsmDXn5-GWqV93IcBE3pbdGsaLx1FthQ2Z7Y1Q91-8vjXWQ8sQIkVYGNlkArf3S_ALAze9qyAOo1xgOeZedo/s512/19759.jpg" alt="FitBuddi icon">
+  <div>
+    <h1>FitBuddi</h1>
+    <p>by <b>David Anand Yadav</b> · Health Under Control</p>
+    <div class="rating">★★★★★ 4.8 · 1k+ downloads</div>
+  </div>
+</section>
+
+<div class="safe">
+  <div style="font-size:26px;color:var(--accent)">✓</div>
+  <div><b>100% Safe &amp; Scanned APK</b><span>Scanned APK · Verified publisher</span></div>
+</div>
+
+<!-- RIBBON: edit the messages in the script at the bottom (RIBBON_MESSAGES) -->
+<div class="ribbon" id="ribbon"><span id="ribbonText"></span><button id="ribbonClose" aria-label="Close">×</button></div>
+
+<div class="stats">
+  <div><b>3.5.1</b><span>Version</span></div>
+  <div><b>1K+</b><span>Downloads</span></div>
+  <div><b>4.8★</b><span>Rating</span></div>
+  <div><b>10+</b><span>Android</span></div>
+</div>
+
+<h2>App Preview</h2>
+<div class="shots" id="shots">
+  <!-- SCREENSHOTS: replace any link below with your own screenshot link -->
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ4qIu2uSC0xS_oGNlAnIBDQ_QEfbNYelD-alAa_b_UACHaq-wBtYh7zc_hqIt3EGys206cKTHUnAd73Rt4HOrFDi1gmhPsdvENE-cdd10juyGXWJCtekbq6LGbg884J863Z7TT-PlCt0QmMTjH7o9fI0ZMWBrXRrhhlXy3U4ngcKWLUBY_M3wjHUcE_A/s1672/19765.png" alt="Screenshot 1">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFfXm0XBxlNbAwwV_q_65EVoKWdwDt3qyIyz5rJIntru2R8N532WOBo9ofMkWO_91yJ2Tpu_FwTCPOKuiPmazQ-vXPIlZnkYt9ifPBKKB4poXHevDiFXZLpleWEIIhFZ7DNHevVTl-odx5IX_1zFXFDKJ82Yg69DjhQE3rRwllEvWsRz6K9KAMh0-Yuzk/s1672/19767.png" alt="Screenshot 2">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxxJL24OeQZ-Z7gvrCjx-W_D9i-cpFPOnUw5vzPGQ9BrTQAMhybDow7lR1S0NZ1ovRtMTQqfeprsQhi8Ov1OQDyDsJUerJrDJosdaRXmpeREBbF0BvZrveiAOcApMDFFz3cJWrDL7n-R5OhWvk3SR6cvK9b5S8JIVf-HmP5wjae8a8dlcvQ5zIYmIDHWY/s1672/19766.png" alt="Screenshot 3">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjsBTc27vGD9Brkc202jCzUARTuRrYsQjQKW1Ph2Z7Q-_mfIUzX11HYgVuEhoKzxhkW_MydOHDU4TMy61Lwt9sSAgcr7mqYWxTIM2IHw2QCCPE1NfUxkptYR9iT7xMb57vm31XQpgZeC2R1vd0wJjbwBfI60zXYBFaNuaPpqKrfFetnPt321C354ClTD4/s1672/19769.png" alt="Screenshot 4">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihfkpL3AhrfXzOqc0E6l0L5_nnNZlWkyqkIzWKjwSYfIwWCa0gVgQjh1eWIBV5HJCBZVK2xEk08-PwZZlJ4sjjXIUg3YrFedwy_nkFgdprEvi68hWmUSGaQCsZutx7tQwc75X8wTQ4fIdVBdJjw8YpHNQITUlhapS9jKiyji81Jc5K3rlvTxIYJnBaxV4/s1672/19768.png" alt="Screenshot 5">
+</div>
+
+<a class="btn" href="https://drive.google.com/uc?export=download&id=1B7rty7t_d72V-OnxNlG8zSMyZEI8JwHa">⬇ Download FitBuddi.apk — v3.5.1</a>
+<p class="note">Free · Direct download · Sign in with Google</p>
+
+<div class="social">
+  <a href="https://t.me/+m0QdXEpJEd9hYjY1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.5 3.5 2.6 10.8c-1 .4-1 1.2-.2 1.5l4.8 1.5 1.9 5.8c.2.5.9.7 1.3.3l2.7-2.5 5 3.7c.6.4 1.3.1 1.5-.6l3.3-15.5c.2-.9-.6-1.6-1.4-1.3zM8.6 13.6l9.6-6-7.4 7.6-.3 3.3z"/></svg>Telegram</a>
+  <a href="https://chat.whatsapp.com/BsPMsHWxsaMDmiEc1M8whr?s=cl&p=a&mlu=4&ilr=4" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/><path fill="#fff" d="M8.6 7.5c-.3 0-.7.4-.9 1-.3 1 .2 2.3 1.4 3.8 1.3 1.6 2.9 2.7 4.3 3 .8.2 1.6-.3 1.8-1 .1-.4 0-.6-.3-.7l-1.4-.7c-.3-.1-.5 0-.7.2l-.4.5c-1-.4-2-1.4-2.5-2.3l.4-.5c.2-.2.2-.5.1-.7l-.7-1.4c-.1-.2-.3-.3-.6-.2z"/></svg>WhatsApp</a>
+  <a href="https://instagram.com/fitbuddy_tech" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor"/></svg>Instagram</a>
+  <a href="https://www.facebook.com/share/1CykdYFTFF/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 1.2 19.9v-7H10.7V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 12 2z"/></svg>Facebook</a>
+  <a href="https://linktr.ee/alphacorelite" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v18M12 8 6.5 5M12 8l5.5-3M12 13l-7-2.5M12 13l7-2.5"/></svg>Linktree</a>
+  <!-- COURSES: replace # with your courses link -->
+  <a href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></svg>Courses</a>
+</div>
+
+<h2>Video</h2>
+<!-- VIDEO: put your YouTube video ID below (the part after v= in the link) -->
+<div class="video" id="video">
+  <button class="play" id="playBtn" aria-label="Play video"></button>
+  <div class="vmsg" id="vmsg"></div>
+</div>
+
+<h2>About this app</h2>
+<ul class="points">
+  <li><b>Simple and lightweight</b> — easy to understand and quick to open.</li>
+  <li><b>Track your health</b> — keep your fitness routine in one place.</li>
+  <li><b>Clean interface</b> — everything you need is one tap away.</li>
+  <li><b>Regular updates</b> — actively maintained with new improvements.</li>
+</ul>
+<div class="chips">
+  <span>All exercises &amp; home workouts</span><span>Height exercise</span><span>Base workout</span><span>Challenges</span><span>Athletes tables</span><span>Weekly diet planner</span><span>Flexibility exercises</span>
+</div>
+
+<h2>App details</h2>
+<div class="rows">
+  <div><span>Version</span><b>3.5.1</b></div>
+  <div><span>Size</span><b>~ 70 MB (varies by device)</b></div>
+  <div><span>Requires</span><b>Android 10+ (API 29)</b></div>
+  <div><span>Package</span><b>APK</b></div>
+</div>
+
+<h2>How to install</h2>
+<ol class="steps">
+  <li>Tap <b>&nbsp;Download APK&nbsp;</b> above and wait for it to finish.</li>
+  <li>Open the downloaded file from your notifications or files app.</li>
+  <li>If Android asks, allow install from this source, then tap <b>&nbsp;Install</b>.</li>
+</ol>
+
+<h2 id="privacy">Privacy Policy</h2>
+<div class="text">
+  <p><b>Sign-in:</b> FitBuddi uses Google Sign-In. Your name and email are received from Google only to sign you in and show your account.</p>
+  <p><b>No own server:</b> We do not run our own server to store your personal data.</p>
+  <p><b>Internet and ads:</b> The app needs an internet connection to show ads. Ad partners may collect device information such as the advertising ID, under their own privacy policies.</p>
+  <p><b>Notifications:</b> The app asks for notification permission to send you reminders and update alerts. You can turn this off anytime in your phone settings.</p>
+  <p><b>Your choices:</b> You can sign out or delete the app anytime. For questions or data requests, contact us below.</p>
+</div>
+
+<h2 id="contact">Contact</h2>
+<div class="text">
+  <p>Developer: David Anand Yadav</p>
+  <p>Email: <a href="mailto:alphacorelite@gmail.com">alphacorelite@gmail.com</a></p>
+</div>
+
+<footer>© 2026 FitBuddi · v3.5.1 · Made for Android by David Anand Yadav</footer>
+</div>
+
+<div class="modal" id="modal">
+  <img id="modalImg" src="" alt="">
+  <div><button id="prev">‹ Prev</button><button id="closeM">Close</button><button id="next">Next ›</button></div>
+</div>
+
+<script>
+/* ===== EDIT HERE ===== */
+var RIBBON_MESSAGES = [
+  "✨ New version 3.5.1 is out — download it now!",
+  "🔔 Stay tuned: new updates release regularly."
+];
+var VIDEO_ID = ""; /* example: "dQw4w9WgXcQ" */
+/* ===================== */
+
+/* Theme (default dark) */
+var root = document.documentElement, btn = document.getElementById("themeBtn");
+function setTheme(t){
+  root.setAttribute("data-theme", t);
+  btn.textContent = t === "dark" ? "☀ Light" : "🌙 Dark";
+  try { localStorage.setItem("fb-theme", t); } catch(e){}
+}
+var saved = "dark";
+try { saved = localStorage.getItem("fb-theme") || "dark"; } catch(e){}
+setTheme(saved);
+btn.onclick = function(){ setTheme(root.getAttribute("data-theme") === "dark" ? "light" : "dark"); };
+
+/* Ribbon */
+var ri = 0, rt = document.getElementById("ribbonText");
+function showRibbon(){ rt.textContent = RIBBON_MESSAGES[ri]; ri = (ri + 1) % RIBBON_MESSAGES.length; }
+showRibbon();
+var rTimer = setInterval(showRibbon, 5000);
+document.getElementById("ribbonClose").onclick = function(){
+  document.getElementById("ribbon").style.display = "none"; clearInterval(rTimer);
+};
+
+/* Screenshot viewer */
+var imgs = Array.prototype.slice.call(document.querySelectorAll("#shots img")), cur = 0;
+var modal = document.getElementById("modal"), mi = document.getElementById("modalImg");
+function openM(i){ cur = (i + imgs.length) % imgs.length; mi.src = imgs[cur].src; modal.classList.add("open"); }
+imgs.forEach(function(im, i){ im.onclick = function(){ openM(i); }; });
+document.getElementById("prev").onclick = function(){ openM(cur - 1); };
+document.getElementById("next").onclick = function(){ openM(cur + 1); };
+document.getElementById("closeM").onclick = function(){ modal.classList.remove("open"); };
+modal.onclick = function(e){ if (e.target === modal) modal.classList.remove("open"); };
+
+/* Video */
+var vbox = document.getElementById("video"), vmsg = document.getElementById("vmsg");
+if (!VIDEO_ID) vmsg.textContent = "Video coming soon";
+document.getElementById("playBtn").onclick = function(){
+  if (!VIDEO_ID) return;
+  vbox.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + VIDEO_ID + '?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+};
+</script>
+</body>
+</html>
